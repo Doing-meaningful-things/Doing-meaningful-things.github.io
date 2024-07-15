@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="John Doe"><link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title> - Hexo</title>
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css">
+<!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]-->
+<script src="/js/jquery-3.1.1.min.js"></script>
+
+<script src="/js/fancybox/jquery.fancybox.min.js"></script>
+<meta name="generator" content="Hexo 7.3.0"></head><body style="opacity:0"><header class="head"><h1 class="head-title u-fl"><a href="/">Hexo</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a class="head-nav__link" href="/tags">标签</a></li><li class="head-nav__item"><a class="head-nav__link" href="/archives">目录</a></li></ul></nav></header><main class="main"><article class="post"><header class="post__head"><time class="post__time" datetime="2024-07-15T11:51:03.098Z">2024 - 07 - 15 19:51:03</time><h1 class="post__title"><a href="/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8F%8A%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%AE%80%E4%BB%8B.html"></a></h1><div class="post__main echo"><h1 id="信息安全及渗透测试简介"><a href="#信息安全及渗透测试简介" class="headerlink" title="信息安全及渗透测试简介"></a>信息安全及渗透测试简介</h1><h2 id="一、术语介绍"><a href="#一、术语介绍" class="headerlink" title="一、术语介绍"></a>一、术语介绍</h2><ul>
+<li><p>病毒：是在计算机程序中插入的破坏计算机功能或者数据的代码，能影响计算机使用，能自我复制的一组计算机指令或者程序代码</p>
+</li>
+<li><p>木马：是比较流行的病毒文件，与一般的病毒不同，它不会自我繁殖，也并不“刻意”地去感染其他文件，它通过将自身伪装吸引用户下载执行，向施种木马者提供打开被种主机的门户，使施种者可以任意毁坏、窃取被种者的文件，甚至远程操控被种主机</p>
+</li>
+<li><p>肉鸡：指电脑中了木马，或者留了后门，可以被远程操控的机器，现在许多人把有WEBSHELL 权限的机器也叫肉鸡</p>
+</li>
+<li><p>抓鸡：利用使用大量的程序的漏洞，使用自动化方式获取肉鸡的行为</p>
+</li>
+<li><p>挖矿：是将一段时间内比特币系统中发生的交易进行确认，并记录在区块链上形成新区块的过程</p>
+</li>
+<li><p>MD5：一种被广泛使用的密码散列函数,属于不可逆加密</p>
+</li>
+<li><p>CMS：Content Management System的缩写，内容管理系统</p>
+</li>
+<li><p>框架：代码框架 比如CMS是已经装修好的房子 框架就是毛坯房</p>
+</li>
+<li><p>漏洞：硬件、软件、协议等可利用安全缺陷，可能被攻击者利用，对数据进行篡改，控制等</p>
+</li>
+<li><p>一句话木马：通过向服务端提交一句简短的代码，配合本地客户端实现Webshell功能的木马</p>
+</li>
+<li><p>Webshell:通过Web入侵后留下的后门工具，可以据此对网站服务进行一定程度的控制</p>
+</li>
+<li><p>提权：操作系统低权限的账户将自己提升为管理员权限使用的过程</p>
+</li>
+<li><p>跳板：使用肉鸡IP来实施攻击其他目标，以便更好的隐藏自己的身份信息</p>
+</li>
+<li><p>旁站：即同服务器下的网站入侵，入侵之后可以通过提权跨目录等手段拿到目标网站的权限</p>
+</li>
+<li><p>C段：即同C段下服务器入侵。如目标IP为192.168.1.1入侵192.168.1.*的任意一台机器，然后利用一些黑客工具嗅探获取在网络上传输的各种信息</p>
+</li>
+<li><p>撞库：是黑客通过收集互联网已泄露的用户和密码信息，生成对应的字典表，批量登陆其他网站后，得到可以登录的用户</p>
+</li>
+<li><p>暴库&#x2F;脱库：通过一些技术手段或者程序漏洞得到数据库的地址，并将数据非法下载到本地</p>
+</li>
+<li><p>Poc：能证明漏洞存在的代码，一般没有高危操作的功能</p>
+</li>
+<li><p>Exp：漏洞利用 一般都是demo工具</p>
+</li>
+<li><p>Bug：指系统功能与预期不一致的代码缺陷</p>
+</li>
+<li><p>Waf：(WebApplicationFirewalld)WEB应用防护系统，也称之为网站应用级入侵防御系统</p>
+</li>
+<li><p>Payload：攻击载荷，被送到目标机器执行的整段代码</p>
+</li>
+<li><p>0day：未公开的漏洞 仅少数人知道</p>
+</li>
+<li><p>1day：刚公开的漏洞官方发布了补丁，但是网上还有很多未打补丁的漏洞</p>
+</li>
+<li><p>Nday：漏洞发布了很久还是没有修复的漏洞；(蜜罐)</p>
+</li>
+<li><p>Shellcode：是一段用于利用软件漏洞而执行的代码，shellcode为16进制的机器码，因为经常让攻击者获得shell而得名</p>
+</li>
+<li><p>APT：高级可持续性攻击，是指组织（特别是政府）或者小团体利用先进的攻击手段对特定目标进行长期持续性网络攻击的供给形式</p>
+</li>
+<li><p>鱼叉： 针对特定目标的喜欢进行钓鱼</p>
+</li>
+</ul>
+<h2 id="二、渗透测试流程"><a href="#二、渗透测试流程" class="headerlink" title="二、渗透测试流程"></a>二、渗透测试流程</h2><h3 id="什么是渗透测试"><a href="#什么是渗透测试" class="headerlink" title="什么是渗透测试"></a>什么是渗透测试</h3><p>渗透测试就是通过模拟真实黑客的攻击手段来对目标系统进行一系列的评估!</p>
+<h3 id="什么是等保测评？"><a href="#什么是等保测评？" class="headerlink" title="什么是等保测评？"></a>什么是等保测评？</h3><p>全称是信息安全等级保护测评，是经公安部认证的具有资质的测评机构，依据国家信息安全等级保<br>护规范规定，受有关单位委托，按照有关管理规范和技术标准，对信息系统安全等级保护状况进行检测评估的活动。<br>        安全技术测评：包括物理安全、网络安全、主机系统安全、应用安全和数据安全等五个层面上<br>的安全控制测评。<br>        安全管理测评：包括安全管理机构、安全管理制度、人员安全管理、系统建设管理和系统运维<br>管理等五个方面的安全控制评。</p>
+<h3 id="什么是风险评估？"><a href="#什么是风险评估？" class="headerlink" title="什么是风险评估？"></a>什么是风险评估？</h3><p>风险评估是对信息资产（即某事件或事物所具有的信息集）所面临的威胁、存在的弱点、造成的影<br>响，以及三者综合作用所带来风险的可能性的评估。</p>
+<p><img src="/home/panda/.config/Typora/typora-user-images/image-20240715184907245.png" alt="image-20240715184907245"></p>
+<h3 id="渗透测试流程"><a href="#渗透测试流程" class="headerlink" title="渗透测试流程"></a>渗透测试流程</h3><p><img src="/home/panda/.config/Typora/typora-user-images/image-20240715185047308.png" alt="image-20240715185047308"></p>
+<h4 id="1-确定目标"><a href="#1-确定目标" class="headerlink" title="1.确定目标"></a>1.确定目标</h4><p><img src="/home/panda/.config/Typora/typora-user-images/image-20240715185414345.png" alt="image-20240715185414345"></p>
+<h4 id="2-信息收集"><a href="#2-信息收集" class="headerlink" title="2.信息收集"></a>2.信息收集</h4><table>
+<thead>
+<tr>
+<th>收集信息</th>
+<th>应用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>真实IP地址</td>
+<td>确定网站的真实IP地址，才能挖掘出更多有用的信息</td>
+</tr>
+<tr>
+<td>子域名信息</td>
+<td>如果发现不了网站的管理界面，不妨提前收集好子域名信息</td>
+</tr>
+<tr>
+<td>whois信息</td>
+<td>确定网站是否合法？要爆破管理用户登录？鱼叉式网络钓鱼攻击？</td>
+</tr>
+<tr>
+<td>指纹信息</td>
+<td>操作系统&#x2F;数据库&#x2F;CMS管理系统？</td>
+</tr>
+<tr>
+<td>网站敏感文件</td>
+<td>Robots文件&#x2F;文件上传页面&#x2F;网站备份文件&#x2F;管理员登录</td>
+</tr>
+<tr>
+<td>端口开放信息</td>
+<td>21&#x2F;22&#x2F;25&#x2F;80&#x2F;443&#x2F;1433&#x2F;1521&#x2F;3306&#x2F;3389&#x2F;5000&#x2F;5432&#x2F;</td>
+</tr>
+<tr>
+<td>旁站&#x2F;C段扫描</td>
+<td>一台服务器多台网站？同一网段服务器？</td>
+</tr>
+</tbody></table>
+<h4 id="3-漏洞探测"><a href="#3-漏洞探测" class="headerlink" title="3.漏洞探测"></a>3.漏洞探测</h4><p><img src="/home/panda/.config/Typora/typora-user-images/image-20240715185707984.png" alt="image-20240715185707984"></p>
+<h4 id="4-漏洞利用"><a href="#4-漏洞利用" class="headerlink" title="4.漏洞利用"></a>4.漏洞利用</h4><p><img src="/home/panda/.config/Typora/typora-user-images/image-20240715185943914.png" alt="image-20240715185943914"></p>
+<h4 id="5-权限提升"><a href="#5-权限提升" class="headerlink" title="5.权限提升"></a>5.权限提升</h4><h5 id="1-Windows提权"><a href="#1-Windows提权" class="headerlink" title="1.Windows提权"></a>1.Windows提权</h5><p>[[<a target="_blank" rel="noopener" href="https://github.com/SecWiki/windows-kernel-exploits/]]">https://github.com/SecWiki/windows-kernel-exploits\]]</a>:<br>[<a target="_blank" rel="noopener" href="https://github.com/lyshark/Windows-exploits]">https://github.com/lyshark/Windows-exploits]</a>:<br>[<a target="_blank" rel="noopener" href="https://github.com/klsfct/getshell]">https://github.com/klsfct/getshell]</a>:<br>[<a target="_blank" rel="noopener" href="https://github.com/ianxtianxt/win-exp-]">https://github.com/ianxtianxt/win-exp-]</a>: </p>
+<h5 id="2-Liunx提权"><a href="#2-Liunx提权" class="headerlink" title="2.Liunx提权"></a>2.Liunx提权</h5><p>[<a target="_blank" rel="noopener" href="https://github.com/SecWiki/linux-kernel-exploits]">https://github.com/SecWiki/linux-kernel-exploits]</a>: </p>
+<h4 id="6-内网渗透"><a href="#6-内网渗透" class="headerlink" title="6.内网渗透"></a>6.内网渗透</h4><p><img src="/home/panda/.config/Typora/typora-user-images/image-20240715190516515.png" alt="image-20240715190516515"></p>
+<h4 id="7-痕迹清理"><a href="#7-痕迹清理" class="headerlink" title="7.痕迹清理"></a>7.痕迹清理</h4><p><img src="/home/panda/.config/Typora/typora-user-images/image-20240715190544877.png" alt="image-20240715190544877"></p>
+<h4 id="8-撰写报告"><a href="#8-撰写报告" class="headerlink" title="8.撰写报告"></a>8.撰写报告</h4><p><img src="/home/panda/.config/Typora/typora-user-images/image-20240715190622611.png" alt="image-20240715190622611"></p>
+<p><img src="/home/panda/.config/Typora/typora-user-images/image-20240715190633543.png" alt="image-20240715190633543"></p>
+<h2 id="三、作业"><a href="#三、作业" class="headerlink" title="三、作业"></a>三、作业</h2><h4 id="1-如何彻底清除渗透测试痕迹"><a href="#1-如何彻底清除渗透测试痕迹" class="headerlink" title="1.如何彻底清除渗透测试痕迹"></a>1.如何彻底清除渗透测试痕迹</h4><h5 id="1-评估痕迹：确定渗透测试过程中可能留下的所有痕迹"><a href="#1-评估痕迹：确定渗透测试过程中可能留下的所有痕迹" class="headerlink" title="1.评估痕迹：确定渗透测试过程中可能留下的所有痕迹"></a>1.评估痕迹：确定渗透测试过程中可能留下的所有痕迹</h5><h5 id="2-日志清除：删除系统日志、应用程序日志和其他审计跟踪"><a href="#2-日志清除：删除系统日志、应用程序日志和其他审计跟踪" class="headerlink" title="2.日志清除：删除系统日志、应用程序日志和其他审计跟踪"></a>2.日志清除：删除系统日志、应用程序日志和其他审计跟踪</h5><h5 id="3-消除工具和文件：移除用于渗透的工具、脚本和下载的文件"><a href="#3-消除工具和文件：移除用于渗透的工具、脚本和下载的文件" class="headerlink" title="3.消除工具和文件：移除用于渗透的工具、脚本和下载的文件"></a>3.消除工具和文件：移除用于渗透的工具、脚本和下载的文件</h5><h5 id="4-恢复修改：恢复被改动的配置和系统设置"><a href="#4-恢复修改：恢复被改动的配置和系统设置" class="headerlink" title="4.恢复修改：恢复被改动的配置和系统设置"></a>4.恢复修改：恢复被改动的配置和系统设置</h5><h5 id="5-测试验证：确保所有痕迹都被有效清除，避免留下可疑迹象"><a href="#5-测试验证：确保所有痕迹都被有效清除，避免留下可疑迹象" class="headerlink" title="5.测试验证：确保所有痕迹都被有效清除，避免留下可疑迹象"></a>5.测试验证：确保所有痕迹都被有效清除，避免留下可疑迹象</h5><h4 id="2-解释下列名词-IPS、IDS、waf、POC、-EXP、肉鸡、BUG、漏洞、0day、1day、nday"><a href="#2-解释下列名词-IPS、IDS、waf、POC、-EXP、肉鸡、BUG、漏洞、0day、1day、nday" class="headerlink" title="2.解释下列名词   IPS、IDS、waf、POC、 EXP、肉鸡、BUG、漏洞、0day、1day、nday"></a>2.解释下列名词   IPS、IDS、waf、POC、 EXP、肉鸡、BUG、漏洞、0day、1day、nday</h4><ul>
+<li><p>IPS：入侵防御系统是一部能够监视网络或网络设备的网络资料传输行为的计算机网络安全设备，能够及时的中断、调整或隔离一些不正常或是具有伤害性的网络资料传输行为</p>
+</li>
+<li><p>IDS：入侵检测系统是一种对网络传输进行即时监视，在发现可疑传输时发出警报或者采取主动反应措施的网络安全设备</p>
+</li>
+<li><p>Waf：WEB应用防护系统，也称之为网站应用级入侵防御系统</p>
+</li>
+<li><p>Poc：能证明漏洞存在的代码，一般没有高危操作的功能</p>
+</li>
+<li><p>Exp：漏洞利用 一般都是demo工具</p>
+</li>
+<li><p>肉鸡：指电脑中了木马，或者留了后门，可以被远程操控的机器</p>
+</li>
+<li><p>Bug：指系统功能与预期不一致的代码缺陷</p>
+</li>
+<li><p>漏洞：硬件、软件、协议等可利用安全缺陷，可能被攻击者利用，对数据进行篡改，控制等</p>
+</li>
+<li><p>0day：未公开的漏洞 仅少数人知道</p>
+</li>
+<li><p>1day：刚公开的漏洞官方发布了补丁，但是网上还有很多未打补丁的漏洞</p>
+</li>
+<li><p>Nday：漏洞发布了很久还是没有修复的漏洞</p>
+</li>
+</ul>
+<h4 id="3-写出渗透测试流程"><a href="#3-写出渗透测试流程" class="headerlink" title="3.写出渗透测试流程"></a>3.写出渗透测试流程</h4><ol>
+<li><p>确定目标</p>
+</li>
+<li><p>信息收集</p>
+</li>
+<li><p>漏洞探测</p>
+</li>
+<li><p>漏洞利用</p>
+</li>
+<li><p>权限提升</p>
+</li>
+<li><p>内网渗透</p>
+</li>
+<li><p>痕迹清理</p>
+</li>
+<li><p>撰写报告</p>
+</li>
+</ol>
+<h4 id="4-渗透测试、风险评估、等保测评的区别"><a href="#4-渗透测试、风险评估、等保测评的区别" class="headerlink" title="4.渗透测试、风险评估、等保测评的区别"></a>4.渗透测试、风险评估、等保测评的区别</h4><p>渗透测试的执行目的是：评估网络&#x2F;系统&#x2F;应用三者组合使用下的安全状况，参照标准是PTES</p>
+<p>风险评估的执行目的是：以PDCA循环持续推进风险管理，参照标准是ISO27001</p>
+<p>等保测评的执行目的是：是否符合等级保护要求，参照标准是GA 388-2002</p>
+<h4 id="5-写出HTTP通信流程"><a href="#5-写出HTTP通信流程" class="headerlink" title="5.写出HTTP通信流程"></a>5.写出HTTP通信流程</h4><ol>
+<li><p>输入网站访问</p>
+</li>
+<li><p>DNS服务器将域名解析成IP地址</p>
+</li>
+<li><p>浏览器请求web服务器获取web资源</p>
+</li>
+<li><p>web服务器将资源返回给客户端</p>
+</li>
+<li><p>客户端浏览器渲染</p>
+</li>
+<li><p>最后呈现在用户面前</p>
+</li>
+</ol>
+<h4 id="6-Cookie和Session的区别"><a href="#6-Cookie和Session的区别" class="headerlink" title="6.Cookie和Session的区别"></a>6.Cookie和Session的区别</h4><p>Cookie与Session区别：作用范围不同，Cookie 保存在客户端（浏览器），Session 保存在服务器端。</p>
+<h4 id="7-鱼叉与水坑攻击的区别"><a href="#7-鱼叉与水坑攻击的区别" class="headerlink" title="7.鱼叉与水坑攻击的区别"></a>7.鱼叉与水坑攻击的区别</h4><p><strong>鱼叉式攻击</strong>：针对特定个人或组织的网络钓鱼攻击，攻击者发送伪装成正规机构或个人的电子邮件，诱使受害者泄露个人信息或点击恶意链接，从而达到窃取敏感信息、传播恶意软件等目的</p>
+<p><strong>水坑攻击</strong>：针对特定目标群体的网络攻击方式，攻击者首先确定这组目标经常访问的网站，并入侵其中一个或多个，植入恶意软件，等待目标访问时触发恶意代码，达到感染目标的目的</p>
+</div></header></article><section class="reward"><a class="btn-reward" href="#">打赏</a><div class="reward-wrapper clearfix"><img src="/" title="微信"></div></section></main><footer class="foot"><div class="foot-copy">&copy; 2016 - 2024 John Doe</div></footer>
+<script src="/js/scroller.js"></script>
+
+<script src="/js/main.js"></script>
+</body></html>
